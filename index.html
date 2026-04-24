@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Thiago Smith</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #ecf0f1;
+            --accent-color: #34495e;
+            --text-color: #333;
+            --heading-bg: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: left;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            background-color: var(--heading-bg);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+        }
+
+        .description {
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px 20px;
+        }
+
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+            .item-title { flex-direction: column; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Thiago Smith</h1>
+        <div class="contact-info">
+            Rua Augusto Jacinto, Nº 33, Centro, Itaguaí-RJ (23815-570)<br>
+            <strong>(21) 98987-5554</strong> | smith.jr.2000@hotmail.com | 25 anos
+        </div>
+    </header>
+
+    <section>
+        <h2>Perfil Profissional</h2>
+        <p class="description">
+            Ex-integrante da Marinha do Brasil, possuo especialização como Auxiliar Administrativo, com experiência em rotinas operacionais e suporte organizacional. Atuei também como vendedor interno e externo no segmento de crédito e consórcios, atualmente estou no último ano do curso Tecnólogo em Análise e Desenvolvimento de Sistemas e possuo conhecimento avançado na área de TI. Estou em busca de novas oportunidades de emprego onde possa aplicar meus conhecimentos, crescer profissionalmente e contribuir de forma significativa para a organização.
+        </p>
+    </section>
+
+    <section>
+        <h2>Formação - Cursos</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>Ensino Médio Completo - CMS | Colégio Militar de Salvador</span>
+                <span>2018</span>
+            </div>
+        </div>
+        <div class="item">
+            <ul>
+                <li>Cisco Network Academy | IT Essentials 70h - 2021</li>
+                <li>Cisco Network Academy - NDG | Linux Unhatched 08h - 2026</li>
+                <li>UniBF | Tecnólogo em Análise e Desenvolvimento de Sistemas - Término 2026 (cursando)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiência Profissional</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>Marinha do Brasil - Auxiliar Administrativo</span>
+                <span>2020 - 2024</span>
+            </div>
+            <p class="description">
+                Responsável por dar suporte às atividades organizacionais e burocráticas da instituição. Funções incluíram controle e arquivamento de documentos, elaboração de relatórios, atendimento interno, organização de agendas, lançamento de dados em sistemas e apoio à gestão de processos administrativos. Atuava com disciplina e cumprimento de normas, garantindo eficiência nas rotinas do setor.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="item-title">
+                <span>Alfa Cred Consórcios - Vendedor Interno/Externo</span>
+                <span>2025 (07 Meses)</span>
+            </div>
+            <p class="description">
+                Prospecção de clientes e vendas de soluções financeiras (empréstimos e consórcios). Atuação interna via telefone/internet e externa com visitas a parceiros. Atividades envolviam negociação, elaboração de propostas e acompanhamento pós-venda focado em metas.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <ul class="skills-grid">
+            <li>Comunicação clara e eficaz</li>
+            <li>Trabalho em equipe e organização</li>
+            <li>Gerenciamento de tempo</li>
+            <li>Pensamento Crítico e analítico</li>
+            <li>Resolução de problemas</li>
+            <li>Multitarefas</li>
+            <li>Atenção aos detalhes</li>
+            <li>Adaptabilidade</li>
+            <li>Redes de Computadores</li>
+            <li>Proatividade</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Idiomas</h2>
+        <ul>
+            <li><strong>Inglês:</strong> Intermediário (leitura técnica)</li>
+            <li><strong>Espanhol:</strong> Avançado (leitura, escrita e comunicação)</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
